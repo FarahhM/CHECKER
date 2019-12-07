@@ -1,7 +1,7 @@
 import React from "react";
 import "./Todo.css";
 const Todos = ({ todos, deleteTodo, markDone }) => {
-  let newTodos = JSON.parse(localStorage.getItem("todos"));
+  let newTodos = JSON.parse(localStorage.getItem("todos")) || [];
   console.log(newTodos);
 
   const todoList = newTodos.length ? (

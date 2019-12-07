@@ -1,7 +1,7 @@
 import React from "react";
 
 const Checked = ({ checked, unDone, unChecked, clearChecked }) => {
-  let checkedtodo = JSON.parse(localStorage.getItem("checked"));
+  let checkedtodo = JSON.parse(localStorage.getItem("checked")) || [];
 
   const Done = checked.length ? (
     checkedtodo.map(todo => {
